@@ -1,0 +1,363 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@font-face {
+    font-family: "MuseoSans 700-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://anima-uploads.s3.amazonaws.com/projects/60450022ffdc9b3839033b78/fonts/museosans-700italic.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "NeueHelvetica-Roman";
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://anima-uploads.s3.amazonaws.com/projects/60c45000abd0b6baff6dac09/fonts/helvetica-neue-lt-55-roman.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "CircularStd Book-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://anima-uploads.s3.amazonaws.com/projects/60263cfec065b240db4b7496/fonts/circularstd-book.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "MuseoSans 500-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://anima-uploads.s3.amazonaws.com/projects/60450022ffdc9b3839033b78/fonts/museosans-500-italic.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "MuseoSans 300-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://anima-uploads.s3.amazonaws.com/projects/60450022ffdc9b3839033b78/fonts/museosans-300.otf') format("opentype");
+}
+
+@font-face {font-family: "Museo Sans 700";
+    src: url("fonts/Museo.eot"); /* IE9*/
+    src: url("fonts/Museo.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("fonts/Museo.woff2") format("woff2"), /* chrome、firefox */
+    url("fonts/Museo.woff") format("woff"), /* chrome、firefox */
+    url("fonts/Museo.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("fonts/Museo.svg#Museo Sans 700") format("svg"); /* iOS 4.1- */
+  }
+
+body {
+    padding:0;
+    margin:0;
+    overflow-x:hidden;
+    font-family:var(--font-family-circularstd_book-regular);
+    font-size:var(--font-size-s);
+}
+
+.screen textarea:focus,
+.screen input:focus {
+    outline: none;
+}
+
+.screen * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+.screen div {
+    -webkit-text-size-adjust: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --eerie-black: #1b1c1d;
+    --midnight-blue: #17497e;
+    --black: #373737;
+    --pattens-blue: #dff5ff;
+    --blue: #3eace2;
+    --submarine: #b8c4cb;
+    --white: #ffffff;
+
+    --font-size-l: 20px;
+    --font-size-m: 18px;
+    --font-size-s: 16px;
+    --font-size-xl: 20px;
+    --font-size-xxl: 22px;
+    --font-size-xxxl: 24px;
+    --font-size-xxxxl: 34px;
+
+    --font-family-circularstd_book-regular: "CircularStd Book-Regular", Helvetica;
+    --font-family-museo_sans_700: "Museo Sans 700", Helvetica;
+    --font-family-museosans_300-regular: "MuseoSans 300-Regular", Helvetica;
+    --font-family-museosans_500-regular: "MuseoSans 500-Regular", Helvetica;
+    --font-family-museosans_700-regular: "Museo Sans 700", Helvetica;
+    --font-family-neuehelvetica-roman: "NeueHelvetica-Roman", Helvetica;
+    --font-family-parseltongue-regular: "Parseltongue-Regular", Helvetica;
+}
+
+body .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background:none;
+}
+
+body .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--blue);
+    border-color: var(--blue);
+    font-family: var(--font-family-neuehelvetica-roman);
+    letter-spacing: 0.3px;
+    line-height: 40px;
+    font-weight: normal;
+}
+
+.carousel-indicators {
+    z-index: 99;
+}
+
+.carousel-indicators [data-bs-target] {
+    cursor: pointer;
+    background-color: #DFF5FF;
+    opacity: 9;
+}
+.carousel-indicators .active {
+    opacity: 1;
+    background-color:#3eace2;
+}
+
+
+.carousel-caption p {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 30px 0;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: var(--font-family-museosans_700-regular);
+    letter-spacing: 0.2px;
+    line-height: normal;
+    font-weight: 600;
+}
+
+h3{
+    font-size: var(--font-size-xxxxl);
+    font-family:var(--font-family-museosans_700-regular);
+    letter-spacing:0.2px;
+    line-height: normal;
+    font-weight: 600;
+}
+
+h4{
+    font-size:var(--font-size-m);
+    font-family:var(--font-family-museosans_700-regular);
+    letter-spacing:0.2px;
+    line-height:normal;
+ }
+
+ul {
+   list-style:none;
+   padding:0;
+   margin:0;
+}
+
+p{
+    padding:0;
+    margin:0;
+    font-size:var(--font-size-s);
+    font-family:var(--font-family-neuehelvetica-roman);
+    line-height:24px;
+    opacity:0.9;
+    letter-spacing: 0.2px;
+}
+
+a {
+  color:var(--black);
+  text-decoration:none;
+}
+
+a:hover {
+    color:var(--blue);
+  }
+
+ul li{
+    list-style:none;
+    padding:0;
+    margin:0;
+    font-size:var(--font-size-s);
+    font-family:var(--font-family-neuehelvetica-roman);
+    line-height:30px;
+    opacity:0.9;
+    letter-spacing: 0.2px;
+ }
+
+footer h5 {
+    font-size:var(--font-size-xl);
+    font-family:var(--font-family-museosans_700-regular);
+    letter-spacing:0.2px;
+}
+
+.testimonial {
+   background:var(--pattens-blue);
+   border-radius:200px 0 0 0;
+   padding:150px 100px;
+   min-height:500px;
+   display:grid;
+   align-content:center;
+}
+.carousel-inner img { width:100%;}
+.carousel-inner::after {
+    display: block;
+    clear: both;
+    content: "";
+    background: linear-gradient(-45deg,rgba(33, 51, 71, 0.7),rgba(33, 51, 71, 0.75));
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    position: absolute;
+}
+.carousel-caption {
+    position: absolute;
+    right: inherit;
+    top: 50%;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    z-index: 99;
+}
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.blog div span{
+    padding:5px;
+    margin-bottom:10px;
+    display:inline-block;
+}
+
+.call img{
+    width: -webkit-fill-available;
+}
+
+.callout-action {
+    background:url(img/callout-action1.png) no-repeat left top;
+    background-size:100%;
+}
+.callout-action div {
+    max-width:400px;
+}
+
+.ab-content {
+    max-width: 480px;
+    margin-left: 40%;
+    padding-top:100px;
+
+}
+
+.callout-about{
+    background:#3EACE2;
+    border-radius:300px 0 0 0;
+    padding:130px 0 80px 0;
+    max-width:600px;
+    float:right;
+}
+.callout-about img {
+    position: relative;
+    left: -150px;
+    max-width: 600px;
+}
+
+.pick-1 { background:#F6DFFF;}
+.pick-2 { background:#CEDBFF;}
+.pick-3 { background:#CEF5FF;}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #3EACE2;
+    background-color: #ebf8ff;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.expertise .main-block {  display:flex;}
+.expertise .main-block .block {background:#fff; max-width:385px; width:100%;  border:#ddd 1px solid; margin-left:50px; padding:20px; min-height:350px;   transition: background-color 0.5s ease-in 100ms}
+.expertise .text-right { float:right;}
+.expertise .text-right img { max-width:100px;}
+.textanim-container {
+    position: relative;
+     width:100%;
+     height:100%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .textanim-title {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    left:10px;
+    right: 0;
+    bottom: 0%;
+    transform: translateY(-50%);
+    text-align: left;
+    transition: 0.5s;
+    width: 100%;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-family-museosans_700-regular);
+  }
+
+  .textanim-container:hover .textanim-title {
+    bottom:110px;
+    transform: translateY(0);
+}
+
+  .textanim-hidden {
+    position: absolute;
+    top: 311px;
+    opacity: 9;
+    transition: 0.4s;
+    text-align: left;
+    width: 95%;
+    left:10px;
+    line-height: normal;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+  }
+  .expertise .main-block .block:hover {
+      background:#17497E;
+      color:#fff;
+      border-color:#17497E;
+      cursor:pointer;
+  }
+
+  .textanim-container:hover .textanim-hidden {
+    top: 70%;
+    transform: translateY(-0%);
+  }
